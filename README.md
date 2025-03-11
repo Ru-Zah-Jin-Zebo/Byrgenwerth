@@ -13,21 +13,33 @@ docker-compose up -d --build
 # Frontend setup
 
 cd frontend
+
 npm run dev
 
 # Project Design
 
 backend/
+
 ├──  app/
+
 │    ├── api/ # Handles API Calls
+
 │    ├── core/ # Stores config and settings for app
+
 │    ├── models/ # Handles Data transfer objects(chat models)
+
 │    └── services/ # Hosts the simple chat agent
+
 frontend/
+
 ├──  src/
+
 │    ├── app/ # Hosts the single page application tsx as well as layout and some placeholder routing logic
+
 │    ├── components/ # Holds all necessary components and ui for application
+
 │    └── lib/ # Hosts API Logic to send and retrieve messages from backend
+
 
 ## Key Design Decisions:
 
@@ -54,12 +66,14 @@ The UI shows appropriate error states when the backend can't be reached or retur
 ## Claude (Anthropic's LLM): Used extensively during development for:
 
 Troubleshooting compatibility issues between libraries (particularly with LangChain versions)
+
 Recommending best practices for implementing streaming responses
 
 
 ## GitHub Copilot: Used for code completion and suggestions, particularly for:
 
 Common utility functions
+
 Light code suggestions 
 
 Both AI tools significantly accelerated development while maintaining code quality, though all suggested code was reviewed, tested, and modified as needed to ensure it met project requirements and maintained best practices within the alloted time.
