@@ -1,9 +1,13 @@
 # Backend Setup
 
 cd Byrgenwerth
+
 cd backend
+
 touch .env
+
 OPENAI_API_KEY=your_openai_api_key_here
+
 docker-compose up -d --build
 
 # Frontend setup
